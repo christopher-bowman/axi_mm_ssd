@@ -1,0 +1,22 @@
+/*
+ * Copyright (C) 2022 Christopher R. Bowman. All rights reserved.
+ * contact: <my initials>@ChrisBowman.com
+ *
+ * Digilent ARTY Z7 board DTS overlay for
+ * axi memory mapped seven segment display interface
+ *
+ */
+ 
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "xlnx,zynq-7000";
+};
+
+&{/axi} {
+	axissd: ssd@043c00000 {
+			compatible = "crb,ssd-1.0";
+			reg = <0x43c00000 0x0004>;
+		};
+};

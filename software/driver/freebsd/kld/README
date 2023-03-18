@@ -1,0 +1,8 @@
+KLD for an AXI memory mapped hardware interface to the Digilent
+Xilinx Zynq based Arty Z20 board
+
+use:
+
+kldload -v ./SP605.ko
+
+to load
